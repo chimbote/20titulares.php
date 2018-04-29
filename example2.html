@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>20 TITULARES</title>
+		<meta charset="UTF-8" />
+        <meta name="description" content="20 titulares mas importante del dia y semana" />
+        <meta name="keywords" content="maycol nay mo" />
+		<meta name="author" content="MAYCOL NAY MO" />
+		<!-- Style for the demo page -->
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<!-- Style of the component -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&v2' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+		<div class="header">
+			<a href="http://tympanus.net/Tutorials/AnimatedTextIconMenu/example1.html">
+				<span>&laquo; Previous Demo: </span>Animated Text and Icon Menu
+			</a>
+			<span class="right_ab">
+				<span>The names of the people depicted in this demo are fictitious</span>
+				<a href="http://www.flickr.com/people/aturkus/" target="_blank">Images by Alan Turkus</a>
+				<a href="http://tympanus.net/codrops/2011/07/22/vertical-sliding-accordion/"><strong>back to the Codrops post</strong></a>
+			</span>
+		</div>
+		<div class="container">
+			<h1>Vertical Sliding Accordion<span> with jQuery</span></h1>
+			<div id="va-accordion" class="va-container">
+				<div class="va-nav">
+					<span class="va-nav-prev">Previous</span>
+					<span class="va-nav-next">Next</span>
+				</div>
+				<div class="va-wrapper">
+					<div class="va-slice va-slice-1">
+						<h3 class="va-title">Destituir </h3>
+						<div class="va-content">
+							<p>Elon Musk </p>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="va-slice va-slice-2">
+						<h3 class="va-title">Miradas a Trump</h3>
+						<div class="va-content">
+							<p>Tim Cook y Trump</p>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-3">
+						<h3 class="va-title">EL INGENIO</h3>
+						<div class="va-content">
+							<p>Steve Wozniak</p>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-4">
+						<h3 class="va-title">EL INNOVADOR</h3>
+						<div class="va-content">
+							<p>Larry Page</p>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-5">
+						<h3 class="va-title">Directora de FACEBOOK</h3>
+						<div class="va-content">
+							<p>Mark Zuckerberg</p>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-6">
+						<h3 class="va-title">LA ECONOMISTA</h3>
+						<div class="va-content">
+							<p>Sheryl Sandberg</p>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-7">
+						<h3 class="va-title">LA INGENIERA DE YAHOO!!</h3>
+						<div class="va-content">
+							<p>Marissa Mayer
+</p>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.vaccordion.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#va-accordion').vaccordion({
+					expandedHeight	: 450,
+					animSpeed		: 500,
+					animEasing		: 'easeInOutBack',
+					animOpacity		: 0.4
+				});
+			});
+		</script>
+    </body>
+</html>
